@@ -1,7 +1,7 @@
 
 from fastapi import FastAPI
-from backend.app.services.simulator_service import generate_data
-from backend.app.services.prediction_service import predict_risk
+from backend.services.simulator_service import generate_data
+from backend.services.prediction_service import predict_risk
 
 app = FastAPI(title="CampusIQ API")
 
