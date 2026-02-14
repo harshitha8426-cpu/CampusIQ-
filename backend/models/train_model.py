@@ -16,5 +16,5 @@ df["risk"] = ((df["crowd"] > 80) | (df["waste"] > 85)).astype(int)
 model = LogisticRegression()
 model.fit(df[["crowd", "waste", "runtime"]], df["risk"])
 
-joblib.dump(model, "backend/app/models/risk_model.pkl")
+joblib.dump(model, "backend/models/risk_model.pkl")
 print("Model trained and saved.")
